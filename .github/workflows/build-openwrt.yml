@@ -69,6 +69,7 @@ jobs:
            df -h
 
     - name: Initialization environment
+      if: always()
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
